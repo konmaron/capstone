@@ -75,7 +75,7 @@ header .mobile {
     display: none; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     header .desktop {
       display: none;
     }
@@ -149,7 +149,7 @@ header .mobile {
     align-items: center;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     #signin {
         display: flex; 
         flex-direction: column; 
@@ -264,7 +264,7 @@ header .mobile {
     display: none; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     #campus {
         margin: 0px;
         padding: 0px; 
@@ -356,7 +356,7 @@ header .mobile {
     display: none; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     #start {
         background-color: white;
         padding: 0px; 
@@ -475,7 +475,7 @@ video {
     height: auto; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     #exhibit {
         padding: 0px; 
         margin: 0px; 
@@ -524,7 +524,7 @@ nav a {
     color: black; 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
     footer {
         padding-bottom: 16px;
     }
