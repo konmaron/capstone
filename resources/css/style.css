@@ -1,0 +1,535 @@
+/* general information */
+
+body {
+    margin: 0;
+    font-family: Helvetica; 
+    font-size: 22px; 
+    opacity: 0.9;
+    display: flex; 
+    flex-direction: column; 
+    width: 100%;  
+}    
+
+p {
+    color: grey;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    height: 64px;
+    align-items: center;
+    text-align: center; 
+    background-color: white; 
+    margin-bottom: 32px; 
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .content {
+    display: flex; 
+    text-align: center; 
+    justify-content: space-between;
+    width: 100%; 
+}
+
+strong {
+    color: black;
+}
+
+header .logo {
+    display: flex;
+    align-items: center; 
+    padding-left: 24px;
+    color: grey; 
+    line-height: 32px;
+}
+
+nav {
+    padding-right: 24px; 
+    display: flex; 
+    justify-content: flex-end;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 0PX 8PX; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black; 
+}
+
+header .mobile {
+    display: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+      display: none;
+    }
+  
+    header .mobile {
+      display: block;
+      width: 100%;
+    }
+  
+    header .content {
+      padding: .5rem 0;
+    }
+  
+    header .mobile ul {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+    }
+  
+    header .mobile li {
+      padding: 0;
+    }
+
+    header .logo {
+        display: none; 
+    }
+
+    header nav ul {
+        padding: 0px; 
+    }
+  }
+
+
+/* Sign In section */
+
+#signin { 
+    background-color: lightgrey; 
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    padding: 64px 32px 32px 0px;  
+    position: relative; 
+}
+
+.banner {
+    float: left; 
+    width: 60%;
+    height: auto; 
+    padding: 32px 24px; 
+    
+}
+
+.sign {
+    background-color: grey; 
+    color: white;   
+    display: flex; 
+    justify-content: center;
+    padding: 0px 8px;   
+}
+
+.signtext {
+    display: flex; 
+    flex-direction: column; 
+    text-align: left; 
+}
+
+.main {
+    display: flex; 
+    align-content: center; 
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    #signin {
+        display: flex; 
+        flex-direction: column; 
+        padding: 0px; 
+        margin: 0px; 
+        width: 100%; 
+    }
+    
+    .main {
+        flex-direction: column;
+        padding: 0px; 
+        margin: 0px; 
+    }
+
+    #signin img {
+        width: 100%; 
+        padding: 0px; 
+        margin: 0px;
+    }
+    
+    #signin h1 {
+        padding: 32px 16px; 
+        margin: 0px; 
+    }
+
+    #signin p {
+        padding: 0px 16px;
+        margin: 0px;
+    }
+
+    .sign {
+        margin: 24px 16px 32px 16px; 
+    }
+}
+
+/*On campus*/ 
+
+#campus {
+    padding: 32px 32px 32px 0px;  
+    position: relative; 
+    display: flex; 
+    justify-content: start; 
+    flex-direction: row;
+}
+
+.left {
+    display: flex;
+    flex-direction: column; 
+    flex: 60%; 
+    flex-wrap: nowrap; 
+}
+
+.information {
+    width: 100%;
+    padding: 16px 24px; 
+}
+
+.infotext {
+    text-align: left; 
+    padding-left: 24px; 
+}
+
+.infotext h2 {
+    padding-bottom: 24px;
+}
+
+.right {
+    display: flex; 
+    flex-direction: column; 
+    flex: 40%; 
+}
+
+.info {
+    display: flex; 
+    flex-direction: row; 
+    height: auto;  
+    margin-left: 48px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center; 
+}
+
+.infopictext {
+    display: flex; 
+    Flex-direction: column; 
+    align-items: center; 
+    width: 65%; 
+    padding-left: 24px; 
+    text-align: left; 
+}
+
+.infopictext h4, .infopictext p {
+    margin: 8px 0px 8px 0px; 
+}
+
+.guest {
+    background-color: lightgrey;
+}
+
+.picinfo { 
+    width: 35%; 
+    height: auto; 
+    padding-left: 16px; 
+}
+
+.infopic {
+    width: 100%; 
+    height: auto; 
+}
+
+.infopicmob {
+    display: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    #campus {
+        margin: 0px;
+        padding: 0px; 
+        width: 100%; 
+    }
+    
+    .left {
+        display: none;
+    }
+
+    .info {
+        display: flex; 
+        flex-direction: column; 
+        padding: 16px 16px 64px 16px; 
+        margin: 0px; 
+    }
+
+    .picinfo {
+        padding: 0px; 
+        margin: 0px;  
+        width: 100%; 
+    }
+
+    .infopic {
+        display: none;
+    }
+
+    .infopicmob {
+        display: flex; 
+        width: 100%; 
+        height: auto; 
+    }
+
+    .guest {
+        background-color: white; 
+    }
+
+}
+
+/*Start Learning*/
+
+#start {
+    padding: 32px 32px 32px 0px;  
+    position: relative; 
+    display: flex; 
+    justify-content: start; 
+    flex-direction: column;
+    background-color: lightgrey; 
+}
+
+#start h1 {
+    text-align: center; 
+}
+
+.courses {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center;
+    padding-left: 40px; 
+    padding-right: 40px; 
+}
+
+.course {
+    background-color: white;
+    text-align: left; 
+    width: 350px;
+    margin: 16px;  
+}
+
+.course p {
+    color: grey;
+    padding-top: 8px; 
+}
+
+.course h4 {
+    padding-top: 16px;  
+}
+
+.course p, .course h4 {
+    padding-left: 16px; 
+}
+
+.courseimg {
+    width: 100%; 
+    height: auto; 
+}
+
+.coursesmob {
+    display: none; 
+}
+
+@media only screen and (max-width: 600px) {
+    #start {
+        background-color: white;
+        padding: 0px; 
+    }
+
+    #start h1 {
+        padding: 32px 0px 16px 0px; 
+    }
+    
+    .courses {
+        display: none; 
+    }
+
+    .coursesmob {
+        display: flex;
+        flex-direction: column;
+        width: 100%; 
+    }
+
+    .coursemob {
+        background-color: lightgrey;
+        margin: 0px 16px 8px 16px; 
+    }
+
+    .coursemob h2 {
+        padding: 16px 0px 24px 16px; 
+        margin: 0px; 
+    }
+
+}
+
+/*Exhibit*/ 
+
+#exhibit {
+    padding: 32px 32px 32px 0px;  
+    position: relative; 
+    display: flex; 
+    justify-content: start; 
+    flex-direction: row;
+}
+
+.thesis {
+    display: flex;
+    justify-content: center; 
+    width: 100%; 
+    padding: 0px; 
+    margin: 32px 0px;
+}
+
+.thesis h1 {
+    margin: 0px; 
+}
+
+.exleft {
+    display: flex;
+    flex-direction: column; 
+    flex: 60%; 
+    flex-wrap: nowrap; 
+}
+
+video {
+    width: 100%;
+    padding-left: 24px; 
+}
+
+.exinfotext {
+    text-align: left; 
+    padding-left: 24px; 
+}
+
+.exinfotext h2 {
+    padding-bottom: 24px;
+}
+
+.exright {
+    display: flex; 
+    flex-direction: column; 
+    flex: 40%; 
+}
+
+.exinfo {
+    display: flex; 
+    flex-direction: row; 
+    height: auto;  
+    margin-left: 48px; 
+    padding-top: 16px;
+    padding-bottom: 16px;
+    align-items: center; 
+}
+
+.extext {
+    display: flex; 
+    Flex-direction: column; 
+    align-items: center; 
+    width: 65%; 
+    padding-left: 24px; 
+    text-align: left; 
+}
+
+.extext h4, .extext p {
+    margin: 8px 0px 8px 0px; 
+}
+
+.fisma {
+    background-color: lightgrey;
+}
+
+.picex { 
+    width: 35%; 
+    height: auto; 
+    padding-left: 16px; 
+}
+
+.expic {
+    width: 100%; 
+    height: auto; 
+}
+
+@media only screen and (max-width: 600px) {
+    #exhibit {
+        padding: 0px; 
+        margin: 0px; 
+    }
+
+    .exright, .exinfotext {
+        display: none; 
+    }
+
+    video {
+        padding: 0px 0px 24px 0px; 
+        margin: 0px; 
+    }
+
+    .thesis {
+        margin: 32px 0px 16px 0px; 
+    }
+}
+
+/*Footer*/
+
+footer {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px; 
+    padding-left: 24px; 
+    padding-top: 16px; 
+}
+
+footer a {
+    margin: 0px; 
+}
+
+footer nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    padding: 0PX 8PX; 
+}
+
+nav a {
+    text-decoration: none;
+    color: black; 
+}
+
+@media only screen and (max-width: 600px) {
+    footer {
+        padding-bottom: 16px;
+    }
+
+    footer nav {
+        display: none; 
+    }
+}
